@@ -1,0 +1,23 @@
+@import url("https://use.typekit.net/tnx7axi.css");
+
+@font-face { font-family: 'inter_italic';
+    src: url('font/inter/Inter-Italic.woff') format('woff'); }
+  @font-face { font-family: 'inter_semibold';
+    src: url('font/inter/Inter-SemiBold.woff') format('woff'); }
+  @font-face { font-family: 'inter_regular';
+    src: url('font/inter/Inter-Regular.woff') format('woff'); }
+@font-face { font-family: 'inter_light';
+    src: url('font/inter/Inter-Light-BETA.woff') format('woff'); }
+
+a {
+    font-family: "inter_regular";
+    text-decoration: none;
+    color: #000000;
+}
+
+.menu ul{
+    list-style: none;
+}
+.sub-menu{
+    padding: 0;
+}
