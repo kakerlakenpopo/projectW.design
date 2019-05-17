@@ -1,4 +1,6 @@
 @import url("https://use.typekit.net/tnx7axi.css");
+@import url('https://fonts.googleapis.com/css?family=Cardo:700');
+@import url('https://fonts.googleapis.com/css?family=Cantata+One');
 
 @font-face { font-family: 'inter_italic';
     src: url('font/inter/Inter-Italic.woff') format('woff'); }
@@ -9,15 +11,148 @@
 @font-face { font-family: 'inter_light';
     src: url('font/inter/Inter-Light-BETA.woff') format('woff'); }
 
+body{
+    margin: 2em 10em;
+}
+h1{
+    font-size: 100px;
+    margin:0;
+}
+h1, h2{
+    font-family: "Cantata+One";
+}
+h2{
+    margin: 3em 0;
+}
+h3{
+    font-family: "inter_semibold";
+}
+p{
+    font-family: "inter_regular";
+}
+
 a {
     font-family: "inter_regular";
     text-decoration: none;
     color: #000000;
 }
-
-.menu ul{
-    list-style: none;
+.active{
+    color: #ff5100;
 }
-.sub-menu{
-    padding: 0;
+.orange{
+    color: #ff5100;
+}
+
+
+.nav-box {
+    margin: 0;
+    height: 74px;
+    margin-bottom: 10px;
+    position: relative;
+    border:1em; 
+}
+.nav-menu{
+width: 100%;    
+}
+
+ul.nav-menu{
+    margin: 0;
+    padding: .4em .6em;
+    text-align: left;
+    list-style: none;
+    border-bottom: 0.5px solid  #000000;
+}
+.nav-menu li{
+    display: inline-block;
+}
+.menu-item{
+    padding-right: 2em;
+}
+.menu-item a:hover{
+    color: #ff5100;
+}
+/*DOES NOT WORK YET
+.menu-item a:active{
+    color: #ff5100;
+}*/
+#project-w, #project-w a{
+    padding-right: 0;
+    float: right;
+    font-family: "inter_semibold";
+}
+
+
+/*article*/
+.article-box{
+    display: flex;
+    flex-direction: row;
+    /*justify-content: flex-start;*/
+}
+article{
+    padding-right: 2em;
+}
+
+/*hosts description*/
+.description{
+    padding: 2em 0 2em 1em;
+    max-width: 800px;
+}
+
+/*hosts tablelle*/
+.hosts-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.host-item{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #fafafa;
+    padding: 1em;
+    margin: 0 1em 1em 0;
+}
+.host-item>img{
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+.host-item>img:hover{
+    filter: grayscale(0%); 
+}
+.host-description{
+    max-width: 300px;
+}
+
+
+/*footer*/
+footer{
+    position: relative;
+    margin-bottom: .5em;
+    bottom: 0;
+    width: 80vw;
+}
+.footer-box {
+    margin: 0;
+    margin-top: 45px;
+    position: relative;
+    border: 1em; 
+}
+ul.footer-menu{
+    margin: 0;
+    padding: .5em .6em;
+    text-align: left;
+    list-style: none;
+    border-top: 0.5px solid  #000000;
+}
+.footer-menu li{
+    display: inline-block;
+}
+
+@media (max-width: 426px)
+{
+    body{
+        margin: 2em 1em;
+    }
 }
